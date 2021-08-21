@@ -1,0 +1,279 @@
+*{
+  text-decoration: none;
+  font-family: Montsarret;
+  background-color: whitesmoke;
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+html, body{
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+header{
+  /* border: solid; */
+  /* border-color: white; */
+  background-color: whitesmoke;
+  border: solid;
+  border-color:whitesmoke;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+header .menu{
+  float: right;
+  margin-right: 25px;
+}
+
+header .menu li{
+  display: inline-block;
+  list-style: none;
+}
+
+header .menu li a:hover{
+  box-shadow: whitesmoke;
+}
+
+header .menu li a{
+  color: black;
+  font-size: 18px;
+  font-weight: 500px;
+  margin-left: 25px;
+  font-family: Montsarret;
+}
+
+header p{
+  font-size: 18px;
+  margin-left: 1%;
+  float: left;
+}
+
+.homepage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.homepage div p{
+  font-family: Montserrat;
+  font-size: 18pt;
+}
+
+.homepage img{
+  margin: 5% 0 0 0;
+  size: 100%;
+  height: 380px;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+}
+
+.about p{
+  margin-top: 0;
+  text-align: justify;
+  font-size: 18pt;
+  margin-left: 300px;
+  margin-right: 300px; 
+}
+
+
+.contact{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+.contact img{
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 80px;
+  height: 80px;
+}
+
+
+.projects{
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.ghlink{
+  border-width: thin;
+  border-color: grey;
+}
+.project{
+  font-family: Montsarret;
+  font-size: 14pt;
+  margin-top: 100px;
+  margin-left: 28px;
+  width: 300px;
+  border-radius: 8px;
+  height: 160px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.project button{
+  border: 1px solid black;
+  margin-left: 14px;
+  padding: 6px;
+  border-radius: 2px;
+  font-style: normal;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    header .menu li{
+      margin-right: 20pxpx;
+    }
+
+    .homepage{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      background-color: whitesmoke;
+    }
+
+    .about{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      font-size: 18pt;
+    }
+    
+    .about h2{
+      font-size: 5pt;
+    }
+    .about p{
+      margin: 0;
+      text-align: justify;
+      font-size: 15pt;
+      padding: 12px;
+       
+    }   
+
+    .homepage img{
+      width: 350px;
+      height: 350px;
+      margin-top: 100px;
+    }
+
+    .contact{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      align-items: center;
+    }
+ 
+    .projects{
+      display: flex;
+      margin-top: 40px;
+      flex-direction: column;
+      width: 80%;
+      justify-content: center;
+      height: 100%;
+     }
+
+    .project{
+      margin-top: 20px;
+      margin-right: 80px;
+      font-family: Montsarret;
+      font-size: 14pt;
+      width: 350px;
+      height: 160px;
+      padding: 2px;
+      border: 1px solid black;
+    }
+
+    .project button{
+      height: 30px;
+      padding: 5px;
+      width: 100px;
+    }
+
+    .contact img{
+      margin-top: 24px;
+    }
+    
+
+.project p{
+  font-family: Montsarret;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+
+}
+
+.project p{
+  font-family: Montsarret;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
