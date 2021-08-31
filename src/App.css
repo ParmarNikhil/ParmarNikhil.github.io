@@ -91,7 +91,8 @@ header p{
   text-align: justify;
   font-size: 18pt;
   margin-left: 300px;
-  margin-right: 300px; 
+  margin-right: 300px;
+  word-spacing: normal; 
 }
 
 
@@ -130,7 +131,7 @@ header p{
   margin-left: 28px;
   width: 300px;
   border-radius: 8px;
-  height: 160px;
+  height: 180px;
   padding: 10px;
   border: 1px solid black;
 }
@@ -142,12 +143,32 @@ header p{
   border-radius: 2px;
   font-style: normal;
   font-size: 14px;
-  margin-top: 16px;
+ 
+
+}
+.buttonholder{
+  position: relative;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
     header .menu li{
-      margin-right: 20pxpx;
+      margin: 0;
+    }
+
+    header{
+      display: flex;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    header .menu li a{
+      font-size: 18px;
+      margin: 8px;
+    }
+
+    header p{
+      display: none;
     }
 
     .homepage{
@@ -159,6 +180,10 @@ header p{
       background-color: whitesmoke;
     }
 
+    .homepage div p{
+      font-size: 18px;
+    }
+
     .about{
       display: flex;
       flex-direction: column;
@@ -168,21 +193,26 @@ header p{
       font-size: 18pt;
     }
     
-    .about h2{
-      font-size: 5pt;
+    .about p span{
+      font-size: 9pt;
     }
+    .about .abh2 span{
+      font-size: 12pt;
+
+    }
+
     .about p{
       margin: 0;
       text-align: justify;
       font-size: 15pt;
       padding: 12px;
-       
+      
     }   
 
     .homepage img{
-      width: 350px;
-      height: 350px;
-      margin-top: 100px;
+      width: 100%;
+      height: 100%;
+      margin-top: 50px;
     }
 
     .contact{
@@ -193,33 +223,43 @@ header p{
       height: 100vh;
       align-items: center;
     }
- 
+    
     .projects{
       display: flex;
-      margin-top: 40px;
       flex-direction: column;
-      width: 80%;
-      justify-content: center;
-      height: 100%;
-     }
+      align-items: center;
+      margin-top: 100px;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
 
     .project{
-      margin-top: 20px;
-      margin-right: 80px;
-      font-family: Montsarret;
-      font-size: 14pt;
-      width: 350px;
-      height: 160px;
-      padding: 2px;
-      border: 1px solid black;
+      margin: 0;
+    }
+    
+    .buttonholder .buttonlink{
+      width: 50px;
     }
 
-    .project button{
-      height: 30px;
-      padding: 5px;
-      width: 100px;
+    .buttonholder .buttoncheck{
+      width: 60px;
+    }
+    .buttonholder button span{
+      display: none;
     }
 
+    
+
+    .buttonholder .buttonlink:after{
+      content: "</>";
+    }
+
+    .buttonholder .buttoncheck:after{
+      content: "check";
+    }
+    
+  
     .contact img{
       margin-top: 24px;
     }
